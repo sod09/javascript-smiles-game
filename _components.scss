@@ -1,0 +1,155 @@
+.game__container {
+  background-color: $color-lime;
+  width: 100%;
+  height: 100%;
+
+  .game__score {
+    display: flex;
+    justify-content: center;
+    background-color: $color-yellow;
+    width: 40%;
+    margin: auto;
+
+    .game__scoretext {
+    font-size: 30px;
+    }
+
+    .game__scoretotal {
+      font-size: 30px;
+    }
+  }
+
+  .game__section {
+    background-color: white;
+    border: solid $color-pink 5px;
+    border-radius: 20px;
+    margin: 10px auto;
+
+    .game__sadfaces {
+    display: grid;
+    color: $color-blue;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2vw;
+    grid-template-areas: 
+    ". sadface__angry sadface__angry ."
+    ". sadface__cry1 sadface__cry2 ."
+    "sadface__cry3 sadface__cry4 sadface__cry5 sadface__cry6"
+    "sadface__tear1 sadface__tear2 sadface__tear3 sadface__tear4"
+    "sadface__tear5 sadface__tear6 sadface__tear7 sadface__tear8";
+
+      .sad__faces {
+        margin: auto;
+      } 
+      #sadface__angry {
+        grid-area: sadface__angry;
+       
+      }
+
+      #sadface__cry1 {
+      grid-area: sadface__cry1;
+      
+      }
+
+      #sadface__cry2 {
+        grid-area: sadface__cry2;
+       
+      }
+
+      #sadface__cry3 {
+        grid-area: sadface__cry3;
+       
+      }
+
+      #sadface__cry4 {
+        grid-area: sadface__cry4;
+      }
+
+      #sadface__cry5 {
+        grid-area: sadface__cry5;
+      }
+
+      #sadface__cry6 {
+        grid-area: sadface__cry6;
+      }
+
+      #sadface__tear1 {
+        grid-area: sadface__tear1;
+      }
+
+      #sadface__tear2 {
+        grid-area: sadface__tear2;
+      }
+
+      #sadface__tear3 {
+        grid-area: sadface__tear3;
+      }
+
+      #sadface__tear4 {
+        grid-area: sadface__tear4;
+      }
+
+      #sadface__tear5 {
+        grid-area: sadface__tear5;
+      }
+
+      #sadface__tear6 {
+        grid-area: sadface__tear6;
+      }
+
+      #sadface__tear7 {
+        grid-area: sadface__tear7;
+      }
+
+      #sadface__tear8 {
+        grid-area: sadface__tear8;
+      }
+      
+
+     }
+
+     .game__happyfaces {
+      display: none;
+  }
+  }
+
+  .game__button {
+   display: flex;
+   justify-content: center;
+
+   .game__shootBTN {
+     background-color: $color-yellow;
+     cursor: pointer;
+     font-size: 30px;     
+   }
+
+   .game__shootBTN:hover {
+     background-color: $color-pink;
+   }
+
+  }
+
+  .game__restart {
+   display: flex;
+   justify-content: center;
+
+   .game__restartBTN {
+     background-color: $color-orange;
+     cursor: pointer;
+     font-size: 20px;   
+     margin-top: 10px;
+   }
+
+
+
+
+  }
+
+
+
+
+
+  
+
+}
+

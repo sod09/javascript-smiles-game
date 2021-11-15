@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.game__container {
+  background-color: #BFF245;
+  width: 100%;
+  height: 100%;
+}
+
+.game__container .game__score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #E0E40D;
+  width: 40%;
+  margin: auto;
+}
+
+.game__container .game__score .game__scoretext {
+  font-size: 30px;
+}
+
+.game__container .game__score .game__scoretotal {
+  font-size: 30px;
+}
+
+.game__container .game__section {
+  background-color: white;
+  border: solid #FF2DA0 5px;
+  border-radius: 20px;
+  margin: 10px auto;
+}
+
+.game__container .game__section .game__sadfaces {
+  display: -ms-grid;
+  display: grid;
+  color: #457EC9;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2vw;
+      grid-template-areas: ". sadface__angry sadface__angry ." ". sadface__cry1 sadface__cry2 ." "sadface__cry3 sadface__cry4 sadface__cry5 sadface__cry6" "sadface__tear1 sadface__tear2 sadface__tear3 sadface__tear4" "sadface__tear5 sadface__tear6 sadface__tear7 sadface__tear8";
+}
+
+.game__container .game__section .game__sadfaces .sad__faces {
+  margin: auto;
+}
+
+.game__container .game__section .game__sadfaces #sadface__angry {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: sadface__angry;
+}
+
+.game__container .game__section .game__sadfaces #sadface__cry1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: sadface__cry1;
+}
+
+.game__container .game__section .game__sadfaces #sadface__cry2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: sadface__cry2;
+}
+
+.game__container .game__section .game__sadfaces #sadface__cry3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: sadface__cry3;
+}
+
+.game__container .game__section .game__sadfaces #sadface__cry4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: sadface__cry4;
+}
+
+.game__container .game__section .game__sadfaces #sadface__cry5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: sadface__cry5;
+}
+
+.game__container .game__section .game__sadfaces #sadface__cry6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: sadface__cry6;
+}
+
+.game__container .game__section .game__sadfaces #sadface__tear1 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: sadface__tear1;
+}
+
+.game__container .game__section .game__sadfaces #sadface__tear2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: sadface__tear2;
+}
+
+.game__container .game__section .game__sadfaces #sadface__tear3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: sadface__tear3;
+}
+
+.game__container .game__section .game__sadfaces #sadface__tear4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: sadface__tear4;
+}
+
+.game__container .game__section .game__sadfaces #sadface__tear5 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: sadface__tear5;
+}
+
+.game__container .game__section .game__sadfaces #sadface__tear6 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: sadface__tear6;
+}
+
+.game__container .game__section .game__sadfaces #sadface__tear7 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: sadface__tear7;
+}
+
+.game__container .game__section .game__sadfaces #sadface__tear8 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  grid-area: sadface__tear8;
+}
+
+.game__container .game__section .game__happyfaces {
+  display: none;
+}
+
+.game__container .game__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game__container .game__button .game__shootBTN {
+  background-color: #E0E40D;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.game__container .game__button .game__shootBTN:hover {
+  background-color: #FF2DA0;
+}
+
+.game__container .game__restart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game__container .game__restart .game__restartBTN {
+  background-color: #E78E57;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=main.css.map */
