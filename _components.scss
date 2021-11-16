@@ -32,77 +32,187 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 2vw;
     grid-template-areas: 
-    ". sadface__angry sadface__angry ."
-    ". sadface__cry1 sadface__cry2 ."
-    "sadface__cry3 sadface__cry4 sadface__cry5 sadface__cry6"
-    "sadface__tear1 sadface__tear2 sadface__tear3 sadface__tear4"
-    "sadface__tear5 sadface__tear6 sadface__tear7 sadface__tear8";
+    ". sadface__angrycontainer sadface__angrycontainer ."
+    ". sadface__crycontainer1 sadface__crycontainer2 ."
+    "sadface__crycontainer3 sadface__crycontainer4 sadface__crycontainer5 sadface__crycontainer6"
+    "sadface__tearcontainer1 sadface__tearcontainer2 sadface__tearcontainer3 sadface__tearcontainer4"
+    "sadface__tearcontainer5 sadface__tearcontainer6 sadface__tearcontainer7 sadface__tearcontainer8";
 
       .sad__faces {
         margin: auto;
+      
       } 
-      #sadface__angry {
-        grid-area: sadface__angry;
-       
+
+      
+
+      #sadface__angrycontainer {
+        grid-area: sadface__angrycontainer;
+        margin: auto;
+        text-align: center;
+
+        .sadface__angryhitpoints {
+        font-size: 40px;
+        font-style: bold;
+        }
       }
 
-      #sadface__cry1 {
-      grid-area: sadface__cry1;
+      #sadface__crycontainer1 {
+        grid-area: sadface__crycontainer1;
+        margin: auto;
+        text-align: center;
+
+        .sadface__cryhitpoints1 {
+        font-size: 30px;
+        font-style: bold;
+        }
       
       }
 
-      #sadface__cry2 {
-        grid-area: sadface__cry2;
+      #sadface__crycontainer2 {
+        grid-area: sadface__crycontainer2;
+        margin: auto;
+        text-align: center;
+     
+        
+        .sadface__cryhitpoints2 {
+          font-size: 30px;
+          font-style: bold;
+        }
+      }
+
+      #sadface__crycontainer3 {
+        grid-area: sadface__crycontainer3;
+        margin: auto;
+        text-align: center;
+
+        .sadface__cryhitpoints3 {
+          font-size: 30px;
+          font-style: bold;
+        }
+
        
       }
 
-      #sadface__cry3 {
-        grid-area: sadface__cry3;
-       
+      #sadface__crycontainer4 {
+        grid-area: sadface__crycontainer4 ;
+        margin: auto;
+        text-align: center;
+
+        .sadface__cryhitpoints4 {
+          font-size: 30px;
+          font-style: bold;
+        }
+
       }
 
-      #sadface__cry4 {
-        grid-area: sadface__cry4;
+      #sadface__crycontainer5 {
+        grid-area: sadface__crycontainer5;
+        margin: auto;
+        text-align: center;
+
+        .sadface__cryhitpoints5 {
+          font-size: 30px;
+          font-style: bold;
+        }
       }
 
-      #sadface__cry5 {
-        grid-area: sadface__cry5;
+      #sadface__crycontainer6 {
+        grid-area: sadface__crycontainer6;
+        margin: auto;
+        text-align: center;
+
+        .sadface__cryhitpoints6 {
+          font-size: 30px;
+          font-style: bold;
+        }
       }
 
-      #sadface__cry6 {
-        grid-area: sadface__cry6;
+      #sadface__tearcontainer1 {
+        grid-area: sadface__tearcontainer1;
+        margin: auto;
+        text-align: center;
+
+        .sadface__tearhitpoints1 {
+          font-size: 30px;
+          font-style: bold;
+        }
       }
 
-      #sadface__tear1 {
-        grid-area: sadface__tear1;
+      #sadface__tearcontainer2 {
+        grid-area: sadface__tearcontainer2;
+        margin: auto;
+        text-align: center;
+
+        .sadface__tearhitpoints2 {
+          font-size: 30px;
+          font-style: bold;
+        }
       }
 
-      #sadface__tear2 {
-        grid-area: sadface__tear2;
+      #sadface__tearcontainer3 {
+        grid-area: sadface__tearcontainer3;
+        margin: auto;
+        text-align: center;
+
+        .sadface__tearhitpoints3 {
+          font-size: 30px;
+          font-style: bold;
+        }
       }
 
-      #sadface__tear3 {
-        grid-area: sadface__tear3;
+      #sadface__tearcontainer4 {
+        grid-area: sadface__tearcontainer4;
+        margin: auto;
+        text-align: center;
+
+        .sadface__tearhitpoints4 {
+          font-size: 30px;
+          font-style: bold;
+        }
       }
 
-      #sadface__tear4 {
-        grid-area: sadface__tear4;
+      #sadface__tearcontainer5 {
+        grid-area: sadface__tearcontainer5;
+        margin: auto;
+        text-align: center;
+
+        .sadface__tearhitpoints5 {
+          font-size: 30px;
+          font-style: bold;
+        }
       }
 
-      #sadface__tear5 {
-        grid-area: sadface__tear5;
+      #sadface__tearcontainer6 {
+        grid-area: sadface__tearcontainer6;
+        margin: auto;
+        text-align: center;
+
+        .sadface__tearhitpoints6 {
+          font-size: 30px;
+          font-style: bold;
+        }
       }
 
-      #sadface__tear6 {
-        grid-area: sadface__tear6;
+      #sadface__tearcontainer7 {
+        grid-area: sadface__tearcontainer7;
+        margin: auto;
+        text-align: center;
+
+        .sadface__tearhitpoints7 {
+          font-size: 30px;
+          font-style: bold;
+        }
       }
 
-      #sadface__tear7 {
-        grid-area: sadface__tear7;
-      }
+      #sadface__tearcontainer8 {
+        grid-area: sadface__tearcontainer8;
+        margin: auto;
+        text-align: center;
 
-      #sadface__tear8 {
-        grid-area: sadface__tear8;
+        .sadface__tearhitpoints8 {
+          font-size: 30px;
+          font-style: bold;
+        }
       }
       
 
