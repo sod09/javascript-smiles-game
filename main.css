@@ -43,6 +43,17 @@ body {
   grid-gap: 2vw;
   grid-template-areas: ". sadface__angrycontainer sadface__angrycontainer ." ". sadface__crycontainer1 sadface__crycontainer2 ." "sadface__crycontainer3 sadface__crycontainer4 sadface__crycontainer5 sadface__crycontainer6" "sadface__tearcontainer1 sadface__tearcontainer2 sadface__tearcontainer3 sadface__tearcontainer4" "sadface__tearcontainer5 sadface__tearcontainer6 sadface__tearcontainer7 sadface__tearcontainer8";
 }
+.game__container .game__section .game__sadfaces .winning__message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FF2DA0;
+  position: absolute;
+  color: #ffff;
+  margin: 200px auto;
+  height: 300px;
+  display: flex;
+}
 .game__container .game__section .game__sadfaces .sad__faces {
   margin: auto;
 }

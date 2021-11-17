@@ -38,6 +38,20 @@
     "sadface__tearcontainer1 sadface__tearcontainer2 sadface__tearcontainer3 sadface__tearcontainer4"
     "sadface__tearcontainer5 sadface__tearcontainer6 sadface__tearcontainer7 sadface__tearcontainer8";
 
+      .winning__message {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $color-pink;
+        position: absolute;
+        color: #ffff;
+        margin: 200px auto;
+        height: 300px;
+        
+        display: flex;
+
+      }
+
       .sad__faces {
         margin: auto;
       
