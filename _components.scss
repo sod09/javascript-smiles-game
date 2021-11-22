@@ -1,6 +1,6 @@
 .game__container {
   background-color: $color-lime;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
 
   .game__score {
@@ -23,14 +23,14 @@
     background-color: white;
     border: solid $color-pink 5px;
     border-radius: 20px;
-    margin: 10px auto;
+    margin: auto;
 
     .game__sadfaces {
     display: grid;
     color: $color-blue;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 2vw;
+    
     grid-template-areas: 
     ". sadface__angrycontainer sadface__angrycontainer ."
     ". sadface__crycontainer1 sadface__crycontainer2 ."
@@ -56,8 +56,7 @@
         margin: auto;
       
       } 
-
-      
+    
 
       .sadface__angrycontainer {
         grid-area: sadface__angrycontainer;
@@ -240,15 +239,21 @@
   .game__button {
    display: flex;
    justify-content: center;
+   background-color: $color-lime;
 
    .game__shootBTN {
-     background-color: $color-yellow;
+     background-color: $color-pink;
+     color: #ffff;
+     font-style: bold;
      cursor: pointer;
-     font-size: 30px;     
+     font-size: 50px; 
+     margin-top: 10px;
+     border-radius: 20px;
+     border: solid 5px #ffff;    
    }
 
    .game__shootBTN:hover {
-     background-color: $color-pink;
+     background-color: #F90088;
    }
 
   }
@@ -269,6 +274,11 @@
 
   }
 
+  
+  .outro {
+    text-align: center;
+    margin-top: 50px;
+  }
 
 
 
