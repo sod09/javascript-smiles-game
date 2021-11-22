@@ -35,8 +35,8 @@
     ". sadface__angrycontainer sadface__angrycontainer ."
     ". sadface__crycontainer1 sadface__crycontainer2 ."
     "sadface__crycontainer3 sadface__crycontainer4 sadface__crycontainer5 sadface__crycontainer6"
-    "sadface__tearcontainer1 sadface__tearcontainer2 sadface__tearcontainer3 sadface__tearcontainer4"
-    "sadface__tearcontainer5 sadface__tearcontainer6 sadface__tearcontainer7 sadface__tearcontainer8";
+    "sadface__tearcontainer7 sadface__tearcontainer8 sadface__tearcontainer9 sadface__tearcontainer10"
+    "sadface__tearcontainer11 sadface__tearcontainer12 sadface__tearcontainer13 sadface__tearcontainer14";
 
       .winning__message {
         display: flex;
@@ -59,7 +59,7 @@
 
       
 
-      #sadface__angrycontainer {
+      .sadface__angrycontainer {
         grid-area: sadface__angrycontainer;
         margin: auto;
         text-align: center;
@@ -70,7 +70,7 @@
         }
       }
 
-      #sadface__crycontainer1 {
+      .sadface__crycontainer1 {
         grid-area: sadface__crycontainer1;
         margin: auto;
         text-align: center;
@@ -82,7 +82,7 @@
       
       }
 
-      #sadface__crycontainer2 {
+      .sadface__crycontainer2 {
         grid-area: sadface__crycontainer2;
         margin: auto;
         text-align: center;
@@ -94,7 +94,7 @@
         }
       }
 
-      #sadface__crycontainer3 {
+      .sadface__crycontainer3 {
         grid-area: sadface__crycontainer3;
         margin: auto;
         text-align: center;
@@ -107,7 +107,7 @@
        
       }
 
-      #sadface__crycontainer4 {
+      .sadface__crycontainer4 {
         grid-area: sadface__crycontainer4 ;
         margin: auto;
         text-align: center;
@@ -119,7 +119,7 @@
 
       }
 
-      #sadface__crycontainer5 {
+      .sadface__crycontainer5 {
         grid-area: sadface__crycontainer5;
         margin: auto;
         text-align: center;
@@ -130,7 +130,7 @@
         }
       }
 
-      #sadface__crycontainer6 {
+      .sadface__crycontainer6 {
         grid-area: sadface__crycontainer6;
         margin: auto;
         text-align: center;
@@ -141,73 +141,7 @@
         }
       }
 
-      #sadface__tearcontainer1 {
-        grid-area: sadface__tearcontainer1;
-        margin: auto;
-        text-align: center;
-
-        .sadface__tearhitpoints1 {
-          font-size: 30px;
-          font-style: bold;
-        }
-      }
-
-      #sadface__tearcontainer2 {
-        grid-area: sadface__tearcontainer2;
-        margin: auto;
-        text-align: center;
-
-        .sadface__tearhitpoints2 {
-          font-size: 30px;
-          font-style: bold;
-        }
-      }
-
-      #sadface__tearcontainer3 {
-        grid-area: sadface__tearcontainer3;
-        margin: auto;
-        text-align: center;
-
-        .sadface__tearhitpoints3 {
-          font-size: 30px;
-          font-style: bold;
-        }
-      }
-
-      #sadface__tearcontainer4 {
-        grid-area: sadface__tearcontainer4;
-        margin: auto;
-        text-align: center;
-
-        .sadface__tearhitpoints4 {
-          font-size: 30px;
-          font-style: bold;
-        }
-      }
-
-      #sadface__tearcontainer5 {
-        grid-area: sadface__tearcontainer5;
-        margin: auto;
-        text-align: center;
-
-        .sadface__tearhitpoints5 {
-          font-size: 30px;
-          font-style: bold;
-        }
-      }
-
-      #sadface__tearcontainer6 {
-        grid-area: sadface__tearcontainer6;
-        margin: auto;
-        text-align: center;
-
-        .sadface__tearhitpoints6 {
-          font-size: 30px;
-          font-style: bold;
-        }
-      }
-
-      #sadface__tearcontainer7 {
+      .sadface__tearcontainer7 {
         grid-area: sadface__tearcontainer7;
         margin: auto;
         text-align: center;
@@ -218,12 +152,78 @@
         }
       }
 
-      #sadface__tearcontainer8 {
+      .sadface__tearcontainer8 {
         grid-area: sadface__tearcontainer8;
         margin: auto;
         text-align: center;
 
         .sadface__tearhitpoints8 {
+          font-size: 30px;
+          font-style: bold;
+        }
+      }
+
+      .sadface__tearcontainer9 {
+        grid-area: sadface__tearcontainer9;
+        margin: auto;
+        text-align: center;
+
+        .sadface__tearhitpoints9 {
+          font-size: 30px;
+          font-style: bold;
+        }
+      }
+
+      .sadface__tearcontainer10 {
+        grid-area: sadface__tearcontainer10;
+        margin: auto;
+        text-align: center;
+
+        .sadface__tearhitpoints10 {
+          font-size: 30px;
+          font-style: bold;
+        }
+      }
+
+      .sadface__tearcontainer11 {
+        grid-area: sadface__tearcontainer11;
+        margin: auto;
+        text-align: center;
+
+        .sadface__tearhitpoints11 {
+          font-size: 30px;
+          font-style: bold;
+        }
+      }
+
+      .sadface__tearcontainer12 {
+        grid-area: sadface__tearcontainer12;
+        margin: auto;
+        text-align: center;
+
+        .sadface__tearhitpoints12 {
+          font-size: 30px;
+          font-style: bold;
+        }
+      }
+
+      .sadface__tearcontainer13 {
+        grid-area: sadface__tearcontainer13;
+        margin: auto;
+        text-align: center;
+
+        .sadface__tearhitpoints13 {
+          font-size: 30px;
+          font-style: bold;
+        }
+      }
+
+      .sadface__tearcontainer14 {
+        grid-area: sadface__tearcontainer14;
+        margin: auto;
+        text-align: center;
+
+        .sadface__tearhitpoints14 {
           font-size: 30px;
           font-style: bold;
         }

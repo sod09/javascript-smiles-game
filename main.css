@@ -41,7 +41,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 2vw;
-  grid-template-areas: ". sadface__angrycontainer sadface__angrycontainer ." ". sadface__crycontainer1 sadface__crycontainer2 ." "sadface__crycontainer3 sadface__crycontainer4 sadface__crycontainer5 sadface__crycontainer6" "sadface__tearcontainer1 sadface__tearcontainer2 sadface__tearcontainer3 sadface__tearcontainer4" "sadface__tearcontainer5 sadface__tearcontainer6 sadface__tearcontainer7 sadface__tearcontainer8";
+  grid-template-areas: ". sadface__angrycontainer sadface__angrycontainer ." ". sadface__crycontainer1 sadface__crycontainer2 ." "sadface__crycontainer3 sadface__crycontainer4 sadface__crycontainer5 sadface__crycontainer6" "sadface__tearcontainer7 sadface__tearcontainer8 sadface__tearcontainer9 sadface__tearcontainer10" "sadface__tearcontainer11 sadface__tearcontainer12 sadface__tearcontainer13 sadface__tearcontainer14";
 }
 .game__container .game__section .game__sadfaces .winning__message {
   display: flex;
@@ -57,138 +57,138 @@ body {
 .game__container .game__section .game__sadfaces .sad__faces {
   margin: auto;
 }
-.game__container .game__section .game__sadfaces #sadface__angrycontainer {
+.game__container .game__section .game__sadfaces .sadface__angrycontainer {
   grid-area: sadface__angrycontainer;
   margin: auto;
   text-align: center;
 }
-.game__container .game__section .game__sadfaces #sadface__angrycontainer .sadface__angryhitpoints {
+.game__container .game__section .game__sadfaces .sadface__angrycontainer .sadface__angryhitpoints {
   font-size: 40px;
   font-style: bold;
 }
-.game__container .game__section .game__sadfaces #sadface__crycontainer1 {
+.game__container .game__section .game__sadfaces .sadface__crycontainer1 {
   grid-area: sadface__crycontainer1;
   margin: auto;
   text-align: center;
 }
-.game__container .game__section .game__sadfaces #sadface__crycontainer1 .sadface__cryhitpoints1 {
+.game__container .game__section .game__sadfaces .sadface__crycontainer1 .sadface__cryhitpoints1 {
   font-size: 30px;
   font-style: bold;
 }
-.game__container .game__section .game__sadfaces #sadface__crycontainer2 {
+.game__container .game__section .game__sadfaces .sadface__crycontainer2 {
   grid-area: sadface__crycontainer2;
   margin: auto;
   text-align: center;
 }
-.game__container .game__section .game__sadfaces #sadface__crycontainer2 .sadface__cryhitpoints2 {
+.game__container .game__section .game__sadfaces .sadface__crycontainer2 .sadface__cryhitpoints2 {
   font-size: 30px;
   font-style: bold;
 }
-.game__container .game__section .game__sadfaces #sadface__crycontainer3 {
+.game__container .game__section .game__sadfaces .sadface__crycontainer3 {
   grid-area: sadface__crycontainer3;
   margin: auto;
   text-align: center;
 }
-.game__container .game__section .game__sadfaces #sadface__crycontainer3 .sadface__cryhitpoints3 {
+.game__container .game__section .game__sadfaces .sadface__crycontainer3 .sadface__cryhitpoints3 {
   font-size: 30px;
   font-style: bold;
 }
-.game__container .game__section .game__sadfaces #sadface__crycontainer4 {
+.game__container .game__section .game__sadfaces .sadface__crycontainer4 {
   grid-area: sadface__crycontainer4;
   margin: auto;
   text-align: center;
 }
-.game__container .game__section .game__sadfaces #sadface__crycontainer4 .sadface__cryhitpoints4 {
+.game__container .game__section .game__sadfaces .sadface__crycontainer4 .sadface__cryhitpoints4 {
   font-size: 30px;
   font-style: bold;
 }
-.game__container .game__section .game__sadfaces #sadface__crycontainer5 {
+.game__container .game__section .game__sadfaces .sadface__crycontainer5 {
   grid-area: sadface__crycontainer5;
   margin: auto;
   text-align: center;
 }
-.game__container .game__section .game__sadfaces #sadface__crycontainer5 .sadface__cryhitpoints5 {
+.game__container .game__section .game__sadfaces .sadface__crycontainer5 .sadface__cryhitpoints5 {
   font-size: 30px;
   font-style: bold;
 }
-.game__container .game__section .game__sadfaces #sadface__crycontainer6 {
+.game__container .game__section .game__sadfaces .sadface__crycontainer6 {
   grid-area: sadface__crycontainer6;
   margin: auto;
   text-align: center;
 }
-.game__container .game__section .game__sadfaces #sadface__crycontainer6 .sadface__cryhitpoints6 {
+.game__container .game__section .game__sadfaces .sadface__crycontainer6 .sadface__cryhitpoints6 {
   font-size: 30px;
   font-style: bold;
 }
-.game__container .game__section .game__sadfaces #sadface__tearcontainer1 {
-  grid-area: sadface__tearcontainer1;
-  margin: auto;
-  text-align: center;
-}
-.game__container .game__section .game__sadfaces #sadface__tearcontainer1 .sadface__tearhitpoints1 {
-  font-size: 30px;
-  font-style: bold;
-}
-.game__container .game__section .game__sadfaces #sadface__tearcontainer2 {
-  grid-area: sadface__tearcontainer2;
-  margin: auto;
-  text-align: center;
-}
-.game__container .game__section .game__sadfaces #sadface__tearcontainer2 .sadface__tearhitpoints2 {
-  font-size: 30px;
-  font-style: bold;
-}
-.game__container .game__section .game__sadfaces #sadface__tearcontainer3 {
-  grid-area: sadface__tearcontainer3;
-  margin: auto;
-  text-align: center;
-}
-.game__container .game__section .game__sadfaces #sadface__tearcontainer3 .sadface__tearhitpoints3 {
-  font-size: 30px;
-  font-style: bold;
-}
-.game__container .game__section .game__sadfaces #sadface__tearcontainer4 {
-  grid-area: sadface__tearcontainer4;
-  margin: auto;
-  text-align: center;
-}
-.game__container .game__section .game__sadfaces #sadface__tearcontainer4 .sadface__tearhitpoints4 {
-  font-size: 30px;
-  font-style: bold;
-}
-.game__container .game__section .game__sadfaces #sadface__tearcontainer5 {
-  grid-area: sadface__tearcontainer5;
-  margin: auto;
-  text-align: center;
-}
-.game__container .game__section .game__sadfaces #sadface__tearcontainer5 .sadface__tearhitpoints5 {
-  font-size: 30px;
-  font-style: bold;
-}
-.game__container .game__section .game__sadfaces #sadface__tearcontainer6 {
-  grid-area: sadface__tearcontainer6;
-  margin: auto;
-  text-align: center;
-}
-.game__container .game__section .game__sadfaces #sadface__tearcontainer6 .sadface__tearhitpoints6 {
-  font-size: 30px;
-  font-style: bold;
-}
-.game__container .game__section .game__sadfaces #sadface__tearcontainer7 {
+.game__container .game__section .game__sadfaces .sadface__tearcontainer7 {
   grid-area: sadface__tearcontainer7;
   margin: auto;
   text-align: center;
 }
-.game__container .game__section .game__sadfaces #sadface__tearcontainer7 .sadface__tearhitpoints7 {
+.game__container .game__section .game__sadfaces .sadface__tearcontainer7 .sadface__tearhitpoints7 {
   font-size: 30px;
   font-style: bold;
 }
-.game__container .game__section .game__sadfaces #sadface__tearcontainer8 {
+.game__container .game__section .game__sadfaces .sadface__tearcontainer8 {
   grid-area: sadface__tearcontainer8;
   margin: auto;
   text-align: center;
 }
-.game__container .game__section .game__sadfaces #sadface__tearcontainer8 .sadface__tearhitpoints8 {
+.game__container .game__section .game__sadfaces .sadface__tearcontainer8 .sadface__tearhitpoints8 {
+  font-size: 30px;
+  font-style: bold;
+}
+.game__container .game__section .game__sadfaces .sadface__tearcontainer9 {
+  grid-area: sadface__tearcontainer9;
+  margin: auto;
+  text-align: center;
+}
+.game__container .game__section .game__sadfaces .sadface__tearcontainer9 .sadface__tearhitpoints9 {
+  font-size: 30px;
+  font-style: bold;
+}
+.game__container .game__section .game__sadfaces .sadface__tearcontainer10 {
+  grid-area: sadface__tearcontainer10;
+  margin: auto;
+  text-align: center;
+}
+.game__container .game__section .game__sadfaces .sadface__tearcontainer10 .sadface__tearhitpoints10 {
+  font-size: 30px;
+  font-style: bold;
+}
+.game__container .game__section .game__sadfaces .sadface__tearcontainer11 {
+  grid-area: sadface__tearcontainer11;
+  margin: auto;
+  text-align: center;
+}
+.game__container .game__section .game__sadfaces .sadface__tearcontainer11 .sadface__tearhitpoints11 {
+  font-size: 30px;
+  font-style: bold;
+}
+.game__container .game__section .game__sadfaces .sadface__tearcontainer12 {
+  grid-area: sadface__tearcontainer12;
+  margin: auto;
+  text-align: center;
+}
+.game__container .game__section .game__sadfaces .sadface__tearcontainer12 .sadface__tearhitpoints12 {
+  font-size: 30px;
+  font-style: bold;
+}
+.game__container .game__section .game__sadfaces .sadface__tearcontainer13 {
+  grid-area: sadface__tearcontainer13;
+  margin: auto;
+  text-align: center;
+}
+.game__container .game__section .game__sadfaces .sadface__tearcontainer13 .sadface__tearhitpoints13 {
+  font-size: 30px;
+  font-style: bold;
+}
+.game__container .game__section .game__sadfaces .sadface__tearcontainer14 {
+  grid-area: sadface__tearcontainer14;
+  margin: auto;
+  text-align: center;
+}
+.game__container .game__section .game__sadfaces .sadface__tearcontainer14 .sadface__tearhitpoints14 {
   font-size: 30px;
   font-style: bold;
 }
