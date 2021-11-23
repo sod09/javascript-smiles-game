@@ -50,7 +50,7 @@ class Ships {
        
         
        if (shipsArray[i].health <= 1) {
-        shipsArray[i].health = 0;
+        shipsArray[i].health = "";
         createiTag.classList.remove("sadface__angry", "sad__faces", "fas", "fa-angry", "fa-4x");
         createiTag.classList.add("fas", "fa-grin-stars", "fa-4x");
         createiTag.style.color= "#FF2DA0"
@@ -74,7 +74,7 @@ class Ships {
 
         
         if (shipsArray[i].health < 1) {
-          shipsArray[i].health = 0;
+          shipsArray[i].health = "";
           createiTag.classList.remove("sad__facescry", "sad__faces", "fas", "fa-sad-cry", "fa-4x");
           createiTag.classList.add("fas", "fa-smile-wink", "fa-4x");
           createiTag.style.color= "#FF2DA0"
@@ -100,7 +100,7 @@ class Ships {
        gridContainer.appendChild(createShipDiv);
 
        if (shipsArray[i].health < 1) {
-        shipsArray[i].health = 0;
+        shipsArray[i].health = "";
         createiTag.classList.remove("sad__facetears", "sad__faces", "fas", "fa-sad-tear", "fa-4x");
         createiTag.classList.add("fas", "fa-smile", "fa-4x");
         createiTag.style.color= "#FF2DA0"
@@ -113,8 +113,6 @@ class Ships {
 }
 
 
-
-
 // call the method within ships to create ships and push to an array
 Ships.createMotherShips(1);
 
@@ -122,15 +120,9 @@ Ships.createDefenceShips(6);
 
 Ships.createAttackShips(8);
 
-Ships.createHTMLShips();
-
-// let notAlive = false;
+Ships.createHTMLShips()
 
 let randomShip;
-
-
-
-
 
 
 // programming method called recursion, like a for loop in a function - function runs itself until it gives us the desired outcome  
@@ -143,18 +135,9 @@ const getRandomShip = () => {
   }
 }
 
-
-
-
-
-
-
-
-
 const handleShoot = () => {
   // taking the shipsArray and using the math method to randomly select an item/index in the array
   // const randomShip = shipsArray[Math.floor(Math.random() * shipsArray.length)];
-
   getRandomShip();
 
   // everytime it clicks, we need to deduct hitPoints
@@ -165,95 +148,33 @@ const handleShoot = () => {
 
   randomShip.health = deductPointsFromHealth;
 
-  
-
-
-
-  console.log(`The ${nameOfShip} is now ${deductPointsFromHealth}`);
-
-  // console.log(deductPointsFromHealth);
-
-
   // if mothership health = 0 then WIN + winning message
   const winningPopUp = document.querySelector(".winning__message");
-
-  console.log(winningPopUp);
-
-  // const removeShipFromArrayWhenZeroPoints = shipsArray.indexOf(randomShip);
-  // if (randomShip.health <= 0) {
-  //   shipsArray.splice(removeShipFromArrayWhenZeroPoints, 1);
-  // }
- 
-  // shipsArray.forEach(function(i) {
-  //   if (i.type === "motherShip") {
-
-  //     const mothershipHealth = i.health;
-  //     const mothershipHitPoints = document.querySelector(".sadface__angryhitpoints")
-
-  //     mothershipHitPoints.innerHTML = mothershipHealth;
-
-    
-  //   }
-
-
-  // })
-
-  
 
   shipsArray.forEach(function (i) {
     if (i.type === "motherShip" && i.health <= 1) {
       winningPopUp.innerHTML = `
-        <div>
+        <div class="winning__div">
           <h1>YOU WIN! YOU TURNED THAT FROWN UPSIDE DOWN!
           </h1>
           <i id="happyface__grin" class="fas fa-grin-stars fa-7x"></i>
         </div>`;
     }
-    // } else if (i.health === 0) { 
-    //       notAlive = true;
-    // } else if (i.health > 0 ) {
-    //   notAlive = false;
-    // }
-  });
-
-  // const checkAlive = () => {
-  //   if (notAlive) {
-  //     winningPopUp.innerHTML = `
-  //       <div>
-  //         <h1>YOU WIN! YOU TURNED THAT FROWN UPSIDE DOWN!
-  //         </h1>
-  //         <i id="happyface__grin" class="fas fa-grin-stars fa-7x"></i>
-  //       </div>`;
-  //   }
-  // }
   
-  // checkAlive()
-  // if boolean is true game over 
-  // if boolean is false keep going 
-
-  // const checkArrayLengthForWin = () => {
-  //   if (shipsArray.length < 1) {
-  //     winningPopUp.innerHTML = `
-  //     <div>
-  //       <h1>YOU WIN! YOU TURNED THAT FROWN UPSIDE DOWN!
-  //       </h1>
-  //       <i id="happyface__grin" class="fas fa-grin-stars fa-7x "></i>
-  //     </div>`;
-  //     console.log("no more array win");
-  //     return checkArrayLengthForWin;
-  //   }
-  // };
-
-  console.log(shipsArray);
-
-  // checkArrayLengthForWin()
+  });
 
   gridContainer.innerHTML = ""
 
   Ships.createHTMLShips()
 
-
 }
 
-
 shootBTN.addEventListener("click", handleShoot);
+
+document
+  .querySelector(".game__restartBTN")
+  .addEventListener("click", function (e) {
+    if (e.target.classList.contains("game__restartBTN")) {
+      location.reload();
+    }
+  });

@@ -3,19 +3,16 @@
   max-width: 100%;
   height: 100%;
 
-  .game__score {
-    display: flex;
-    justify-content: center;
-    background-color: $color-yellow;
-    width: 40%;
-    margin: auto;
+  .intro__container {
 
-    .game__scoretext {
-    font-size: 30px;
-    }
+    .intro__title {
+      text-align: center;
+      color: $color-pink;
+      font-size: 25px;
+      font-weight: bolder;
+      
+      
 
-    .game__scoretotal {
-      font-size: 30px;
     }
   }
 
@@ -24,6 +21,27 @@
     border: solid $color-pink 5px;
     border-radius: 20px;
     margin: auto;
+
+
+    .winning__div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: $color-orange;
+      position: absolute;
+      color: #ffff;
+      margin: 200px auto;
+      height: 300px;
+      text-align: center;
+      border-radius: 20px;
+
+      i {
+        text-align: center;
+        padding-top: 20px;
+
+      }
+
+    }
 
     .game__sadfaces {
     display: grid;
@@ -38,19 +56,6 @@
     "sadface__tearcontainer7 sadface__tearcontainer8 sadface__tearcontainer9 sadface__tearcontainer10"
     "sadface__tearcontainer11 sadface__tearcontainer12 sadface__tearcontainer13 sadface__tearcontainer14";
 
-      .winning__message {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: $color-pink;
-        position: absolute;
-        color: #ffff;
-        margin: 200px auto;
-        height: 300px;
-        
-        display: flex;
-
-      }
 
       .sad__faces {
         margin: auto;
@@ -246,7 +251,7 @@
      color: #ffff;
      font-style: bold;
      cursor: pointer;
-     font-size: 50px; 
+     font-size: 40px; 
      margin-top: 10px;
      border-radius: 20px;
      border: solid 5px #ffff;    
@@ -264,26 +269,24 @@
 
    .game__restartBTN {
      background-color: $color-orange;
+     color: #ffff;
      cursor: pointer;
      font-size: 20px;   
      margin-top: 10px;
    }
 
-
-
+   .game__restartBTN:hover {
+     background-color: #FF9B33;
+   }
 
   }
 
   
   .outro {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 25px;
   }
 
-
-
-
-  
 
 }
 
