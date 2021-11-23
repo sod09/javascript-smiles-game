@@ -4,15 +4,11 @@
   height: 100%;
 
   .intro__container {
-
     .intro__title {
       text-align: center;
       color: $color-pink;
       font-size: 25px;
       font-weight: bolder;
-      
-      
-
     }
   }
 
@@ -21,7 +17,6 @@
     border: solid $color-pink 5px;
     border-radius: 20px;
     margin: auto;
-
 
     .winning__div {
       display: flex;
@@ -38,30 +33,25 @@
       i {
         text-align: center;
         padding-top: 20px;
-
       }
-
     }
 
     .game__sadfaces {
-    display: grid;
-    color: $color-blue;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    
-    grid-template-areas: 
-    ". sadface__angrycontainer sadface__angrycontainer ."
-    ". sadface__crycontainer1 sadface__crycontainer2 ."
-    "sadface__crycontainer3 sadface__crycontainer4 sadface__crycontainer5 sadface__crycontainer6"
-    "sadface__tearcontainer7 sadface__tearcontainer8 sadface__tearcontainer9 sadface__tearcontainer10"
-    "sadface__tearcontainer11 sadface__tearcontainer12 sadface__tearcontainer13 sadface__tearcontainer14";
+      display: grid;
+      color: $color-blue;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
+      grid-template-areas:
+        ". sadface__angrycontainer sadface__angrycontainer ."
+        ". sadface__crycontainer1 sadface__crycontainer2 ."
+        "sadface__crycontainer3 sadface__crycontainer4 sadface__crycontainer5 sadface__crycontainer6"
+        "sadface__tearcontainer7 sadface__tearcontainer8 sadface__tearcontainer9 sadface__tearcontainer10"
+        "sadface__tearcontainer11 sadface__tearcontainer12 sadface__tearcontainer13 sadface__tearcontainer14";
 
       .sad__faces {
         margin: auto;
-      
-      } 
-    
+      }
 
       .sadface__angrycontainer {
         grid-area: sadface__angrycontainer;
@@ -69,8 +59,8 @@
         text-align: center;
 
         .sadface__angryhitpoints {
-        font-size: 40px;
-        font-style: bold;
+          font-size: 40px;
+          font-style: bold;
         }
       }
 
@@ -80,18 +70,16 @@
         text-align: center;
 
         .sadface__cryhitpoints1 {
-        font-size: 30px;
-        font-style: bold;
+          font-size: 30px;
+          font-style: bold;
         }
-      
       }
 
       .sadface__crycontainer2 {
         grid-area: sadface__crycontainer2;
         margin: auto;
         text-align: center;
-     
-        
+
         .sadface__cryhitpoints2 {
           font-size: 30px;
           font-style: bold;
@@ -107,12 +95,10 @@
           font-size: 30px;
           font-style: bold;
         }
-
-       
       }
 
       .sadface__crycontainer4 {
-        grid-area: sadface__crycontainer4 ;
+        grid-area: sadface__crycontainer4;
         margin: auto;
         text-align: center;
 
@@ -120,7 +106,6 @@
           font-size: 30px;
           font-style: bold;
         }
-
       }
 
       .sadface__crycontainer5 {
@@ -232,61 +217,53 @@
           font-style: bold;
         }
       }
-      
+    }
 
-     }
-
-     .game__happyfaces {
+    .game__happyfaces {
       display: none;
-  }
+    }
   }
 
   .game__button {
-   display: flex;
-   justify-content: center;
-   background-color: $color-lime;
+    display: flex;
+    justify-content: center;
+    background-color: $color-lime;
 
-   .game__shootBTN {
-     background-color: $color-pink;
-     color: #ffff;
-     font-style: bold;
-     cursor: pointer;
-     font-size: 40px; 
-     margin-top: 10px;
-     border-radius: 20px;
-     border: solid 5px #ffff;    
-   }
+    .game__shootBTN {
+      background-color: $color-pink;
+      color: #ffff;
+      font-style: bold;
+      cursor: pointer;
+      font-size: 40px;
+      margin-top: 10px;
+      border-radius: 20px;
+      border: solid 5px #ffff;
+    }
 
-   .game__shootBTN:hover {
-     background-color: #F90088;
-   }
-
+    .game__shootBTN:hover {
+      background-color: #f90088;
+    }
   }
 
   .game__restart {
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
 
-   .game__restartBTN {
-     background-color: $color-orange;
-     color: #ffff;
-     cursor: pointer;
-     font-size: 20px;   
-     margin-top: 10px;
-   }
+    .game__restartBTN {
+      background-color: $color-orange;
+      color: #ffff;
+      cursor: pointer;
+      font-size: 20px;
+      margin-top: 10px;
+    }
 
-   .game__restartBTN:hover {
-     background-color: #FF9B33;
-   }
-
+    .game__restartBTN:hover {
+      background-color: #ff9b33;
+    }
   }
 
-  
   .outro {
     text-align: center;
     margin-top: 25px;
   }
-
-
 }
-
