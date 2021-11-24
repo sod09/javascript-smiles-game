@@ -16,7 +16,9 @@ class Ships {
 
   static createMotherShips(amt) {
     for (let i = 0; i < amt; i++) {
+      // create the ships with the values in the parameters
       const motherShips = new Ships("motherShip", 9, 100);
+      // push to array
       shipsArray.push(motherShips);
     }
   }
@@ -39,7 +41,9 @@ class Ships {
   // this method creates the HTML ships in the game, it loops through and for every ship appends the correct div and classes
   static createHTMLShips() {
     for (let i = 0; i < shipsArray.length; i++) {
+      // if the ship is mothership then....
       if (shipsArray[i].type === "motherShip") {
+        // create a div for the <i> tag to sit in and a hitpoints div add relevant classes and then append both to the div in the grid container
         const createShipDiv = document.createElement("div");
         createShipDiv.classList.add("sadface__angrycontainer");
         const createiTag = document.createElement("i");
@@ -57,6 +61,7 @@ class Ships {
         createShipDiv.appendChild(createHitPointsDiv);
         gridContainer.appendChild(createShipDiv);
 
+        // if ship health less than 1, then remove hitpoints from display and add new class with new smiley face/colour
         if (shipsArray[i].health <= 1) {
           shipsArray[i].health = "";
           createiTag.classList.remove(
@@ -150,6 +155,8 @@ Ships.createDefenceShips(6);
 Ships.createAttackShips(8);
 Ships.createHTMLShips();
 
+// cvreate global variable to allocate ship in array
+
 let randomShip;
 
 // programming method called recursion, like a for loop in a function - function runs itself until it gives us the desired outcome
@@ -170,7 +177,7 @@ const handleShoot = () => {
   const deductPointsFromHealth = totalHealth - hitPoints;
   randomShip.health = deductPointsFromHealth;
 
-  // if mothership health = 0 then WIN + winning message
+  // loop array and if mothership health = 0 then WIN + winning message
   shipsArray.forEach(function (i) {
     if (i.type === "motherShip" && i.health <= 1) {
       winningPopUp.innerHTML = `
@@ -182,6 +189,7 @@ const handleShoot = () => {
     }
   });
 
+  // clear html on each click and run ships methods again to recreate html with updated hit points in the inner html
   gridContainer.innerHTML = "";
   Ships.createHTMLShips();
 };
