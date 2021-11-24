@@ -8,35 +8,45 @@ const shipsArray = [];
 
 // taking an OOP approach, create a class for the ships and then methods to create the ships themselves
 class Ships {
-  constructor(type, hitPoints, health) {
+  constructor(type, amt, hitPoints, health) {
     this.type = type;
+    this.amt = amt;
     this.hitPoints = hitPoints;
     this.health = health;
   }
 
-  static createMotherShips(amt) {
+  static createShips(type, amt, hitPoints, health) {
     for (let i = 0; i < amt; i++) {
       // create the ships with the values in the parameters
-      const motherShips = new Ships("motherShip", 9, 100);
+      const shipGenerator = new Ships(type, amt, hitPoints, health);
       // push to array
-      shipsArray.push(motherShips);
+      shipsArray.push(shipGenerator);
     }
   }
 
-  // static method, allows you to call the method on the class itself
-  static createDefenceShips(amt) {
-    for (let i = 0; i < amt; i++) {
-      const defenceShips = new Ships("defenceShip", 10, 80);
-      shipsArray.push(defenceShips);
-    }
-  }
+  // static createMotherShips(amt) {
+  //   for (let i = 0; i < amt; i++) {
+  //     // create the ships with the values in the parameters
+  //     const motherShips = new Ships("motherShip", 9, 100);
+  //     // push to array
+  //     shipsArray.push(motherShips);
+  //   }
+  // }
 
-  static createAttackShips(amt) {
-    for (let i = 0; i < amt; i++) {
-      const attackShips = new Ships("attackShip", 12, 45);
-      shipsArray.push(attackShips);
-    }
-  }
+  // // static method, allows you to call the method on the class itself
+  // static createDefenceShips(amt) {
+  //   for (let i = 0; i < amt; i++) {
+  //     const defenceShips = new Ships("defenceShip", 10, 80);
+  //     shipsArray.push(defenceShips);
+  //   }
+  // }
+
+  // static createAttackShips(amt) {
+  //   for (let i = 0; i < amt; i++) {
+  //     const attackShips = new Ships("attackShip", 12, 45);
+  //     shipsArray.push(attackShips);
+  //   }
+  // }
 
   // this method creates the HTML ships in the game, it loops through and for every ship appends the correct div and classes
   static createHTMLShips() {
@@ -150,9 +160,15 @@ class Ships {
 }
 
 // call the method within ships to create ships and push to an array
-Ships.createMotherShips(1);
-Ships.createDefenceShips(6);
-Ships.createAttackShips(8);
+// Ships.createMotherShips(1);
+// Ships.createDefenceShips(6);
+// Ships.createAttackShips(8);
+// Ships.createHTMLShips();
+
+Ships.createShips("motherShip", 1, 9, 100);
+Ships.createShips("defenceShip", 6, 9, 80);
+Ships.createShips("attackShip", 8, 12, 45);
+console.log(shipsArray);
 Ships.createHTMLShips();
 
 // cvreate global variable to allocate ship in array
