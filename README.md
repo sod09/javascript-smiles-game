@@ -37,17 +37,17 @@ Initial Figma design - https://www.figma.com/file/iTUn0qbZgERgdgibFz4Ias/Untitle
 
 Tasked with creating a Hostile Aliens Challenge using an OOP Approach.
 
-This was my first approach at OOP.  
+This was my first attempt at OOP.  
 
 I decided to use the logic of the game and change it into "Turn that frown upside down".
-So when you hit the sad faces (aka ships) you turned them into smiling faces. 
+So when you hit the sad faces (aka ships) you turn them into smiling faces. 
 
 The game is won when the mothership has changed or all other ships have been destroyed including the mothership.
 
 I started initially by creating an array and targeting items in the array with a click. 
 I then built on this by deducting health points from the items in the array with each click and displaying a winning pop up message when appropriate.
 
-As an OOP Approach was required, I then cleared the array I had made and built a class with methods to create the faces/ships themselves.
+As an OOP Approach was required, I then cleared the array I had made and built a class with methods to create the faces/ships themselves and push to the array using JavaScript.
 
 The class outlined the keys and values for each object. The methods inside the class created the ships, using the keys and values defined in the class. It then pushed them to an array. A final method, creates the HTML for these ships, as the array is generated this method loops through the ship types and appends the html to the relevant ship.
 
