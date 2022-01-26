@@ -1,7 +1,7 @@
-# javascript-smiles-game
+<h1>OOP JavaScript Game</h1>
 
 
-Skills
+<h2>Skills</h2>
 
 <ul>
 <li>HTML</li>
@@ -12,7 +12,8 @@ Skills
 <li>Git & GitHub</li>
 </ul>
 
-JavaScript
+
+<h2>JavaScript</h2>
 
 <ul>
 <li>OOP Approach</li>
@@ -27,7 +28,8 @@ JavaScript
 
 </ul>
 
-Game Logic & Explanatation
+
+<h2>Logic & Method</h2>
 
 The Nology Hostile Aliens Challenge 
 
@@ -55,3 +57,5 @@ With each click, hit points are deducted from the total health points. This info
 
 A restart button also reloads and restarts the game. 
 
+
+<img src="smiles.gif">
